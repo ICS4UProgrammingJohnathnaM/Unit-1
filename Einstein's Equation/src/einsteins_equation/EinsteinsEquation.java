@@ -3,7 +3,7 @@
  * Created on: 09/12/19
  * Created for: ICS4U
  * Day #5 (Einstein's Equation)
- * This program Calculates stuff :)
+ * This program Calculates Energy using Einsteins Equation with the input being the mass in KG
 */
 package einsteins_equation;
 import java.util.Scanner;
