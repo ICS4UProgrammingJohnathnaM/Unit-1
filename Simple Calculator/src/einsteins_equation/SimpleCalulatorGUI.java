@@ -117,7 +117,7 @@ public class SimpleCalulatorGUI {
 		frame.getContentPane().add(lblSecondNumber);
 		
 		JLabel lblAnswer = new JLabel("Answer");
-		lblAnswer.setBounds(83, 282, 57, 27);
+		lblAnswer.setBounds(30, 282, 180, 88);
 		frame.getContentPane().add(lblAnswer);
 		
 		JButton btnCalculate = new JButton("Calculate");
@@ -138,6 +138,9 @@ public class SimpleCalulatorGUI {
 				else if (operator[0] == "-") {
 					answerText[0] = Double.toString(number[0] - number[1] );
 				}
+				else if (operator[0] == "420") {
+					answerText[0] = "My Nergy died :`(";
+				}
 				else {
 					answerText[0] = "ERROR!";
 				}
@@ -146,5 +149,14 @@ public class SimpleCalulatorGUI {
 		});
 		btnCalculate.setBounds(57, 217, 127, 38);
 		frame.getContentPane().add(btnCalculate);
+		
+		JButton button = new JButton(" - ");
+		button.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				operator[0] = "420";
+			}
+		});
+		button.setBounds(245, 365, 9, 5);
+		frame.getContentPane().add(button);
 	}
 }
