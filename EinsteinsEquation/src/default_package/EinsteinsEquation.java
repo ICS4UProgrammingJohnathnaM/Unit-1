@@ -5,7 +5,7 @@
  * Day #5 (Einstein's Equation)
  * This program Calculates Energy using Einsteins Equation with the input being the mass in KG
 */
-package einsteins_equation;
+package default_package;
 import java.util.Scanner;
 public class EinsteinsEquation {
 	
